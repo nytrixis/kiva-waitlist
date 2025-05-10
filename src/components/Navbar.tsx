@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Language {
@@ -64,6 +64,16 @@ export default function Navbar() {
     }
   };
 
+  // Function to show intro animation again
+  const showIntroAgain = () => {
+    if (typeof window !== 'undefined') {
+      // Remove the visited flag from localStorage
+      localStorage.removeItem("kiva_visited");
+      // Reload the page to trigger the intro animation
+      window.location.reload();
+    }
+  };
+  
   // const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   //   e.preventDefault();
   //   console.log("Search query:", searchQuery);
@@ -110,10 +120,23 @@ export default function Navbar() {
                   About
                 </Link>
                 
-                <Link href="#faq" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/faq" className="text-gray-600 hover:text-primary transition-colors">
                   FAQ
                 </Link>
               </nav>
+            </div>
+            
+            {/* Intro Animation Button - Positioned at the center dividing line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                onClick={showIntroAgain}
+                className="bg-accent text-primary border-primary/20 hover:bg-accent/80 flex items-center"
+              >
+                <Play className="h-3 w-3 mr-1" />
+                Intro
+              </Button>
             </div>
             
             {/* <div className="hidden md:flex items-center ml-4 relative">
@@ -230,6 +253,15 @@ export default function Navbar() {
             <Link href="#faq" className="block text-gray-600 hover:text-primary py-2">
               FAQ
             </Link>
+            
+            {/* Intro Animation Button in mobile menu */}
+            <button
+              onClick={showIntroAgain}
+              className="flex items-center text-primary py-2"
+            >
+              <Play className="h-4 w-4 mr-2" />
+              Watch Intro Animation
+            </button>
             
             <div className="pt-4 border-t border-gray-100">
               <Link href="#waitlist" className="block w-full">

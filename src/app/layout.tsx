@@ -1,6 +1,7 @@
 import './globals.css';
 import { Inter, Poppins } from 'next/font/google';
 import { Toaster } from 'sonner';
+import IntroAnimation from "@/components/IntroAnimation";
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+        <IntroAnimation />
         {children}
         <Toaster position="top-right" />
       </body>
