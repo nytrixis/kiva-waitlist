@@ -117,7 +117,7 @@ export default function Navbar() {
               </nav>
             </div>
             
-            <div className="hidden md:flex items-center ml-4 relative">
+            {/* <div className="hidden md:flex items-center ml-4 relative">
               <form onSubmit={handleSearchSubmit} className="relative">
                 <div className={`flex items-center bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border ${isSearchFocused ? 'border-primary shadow-sm pr-12' : 'border-muted pr-2'}`}>
                   <input
@@ -138,7 +138,7 @@ export default function Navbar() {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
             
             {/* Right section (40%) - Join Waitlist and Language */}
             <div className="w-[40%] flex items-center justify-end space-x-6">
@@ -233,7 +233,7 @@ export default function Navbar() {
             </Link>
             
             <div className="pt-4 border-t border-gray-100">
-              <Link href="#join-waitlist" className="block w-full">
+              <Link href="#waitlist" className="block w-full">
                 <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-white">
                   Join Waitlist
                 </Button>
