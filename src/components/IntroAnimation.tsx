@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function IntroAnimation() {
   const [showIntro, setShowIntro] = useState(false);
-  const [hasVisited, setHasVisited] = useState(true);
+  const [, setHasVisited] = useState(true);
   
   // In the IntroAnimation component:
 useEffect(() => {
@@ -87,7 +87,7 @@ useEffect(() => {
               transition={{ delay: 0.5, duration: 0.8 }}
             >
               <h1 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6">
-                This Mother's Day, Let's Empower Our Mothers
+                This Mother&apos;s Day, Let&apos;s Empower Our Mothers
               </h1>
             </motion.div>
             
