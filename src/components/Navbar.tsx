@@ -242,15 +242,15 @@ export default function Navbar() {
               Features
             </Link>
             
-            <Link href="#how-it-works" className="block text-gray-600 hover:text-primary py-2">
+            <Link href="#mockups" className="block text-gray-600 hover:text-primary py-2">
               How It Works
             </Link>
             
-            <Link href="#about" className="block text-gray-600 hover:text-primary py-2">
+            <Link href="/about" className="block text-gray-600 hover:text-primary py-2">
               About
             </Link>
             
-            <Link href="#faq" className="block text-gray-600 hover:text-primary py-2">
+            <Link href="/faq" className="block text-gray-600 hover:text-primary py-2">
               FAQ
             </Link>
             
