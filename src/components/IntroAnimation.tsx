@@ -107,7 +107,7 @@ useEffect(() => {
               transition={{ delay: 3.5, duration: 0.8 }} // Increased gap between animations
             >
               <p className="text-md md:text-lg text-gray-600 italic">
-                We've heard your stories, your challenges, and your dreams.
+                We&pos;ve heard your stories, your challenges, and your dreams.
               </p>
             </motion.div>
             
