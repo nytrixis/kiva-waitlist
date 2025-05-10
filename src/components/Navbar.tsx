@@ -102,11 +102,11 @@ export default function Navbar() {
                   Features
                 </Link>
                 
-                <Link href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="#mockups" className="text-gray-600 hover:text-primary transition-colors">
                   How It Works
                 </Link>
                 
-                <Link href="#about" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/about" className="text-gray-600 hover:text-primary transition-colors">
                   About
                 </Link>
                 
