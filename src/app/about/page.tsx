@@ -73,7 +73,7 @@ export default function AboutPage() {
                   Our journey has been guided by a simple belief: that beautiful, handcrafted products deserve to be discovered, and the stories behind them deserve to be told.
                 </p>
                 <p>
-                  We're building a community where creators can thrive and shoppers can discover products with meaning and purpose.
+                  We are building a community where creators can thrive and shoppers can discover products with meaning and purpose.
                 </p>
               </div>
               

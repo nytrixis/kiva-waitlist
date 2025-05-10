@@ -1,9 +1,8 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { Star, Quote, CheckCircle2, BarChart3, Users, ShoppingBag, Megaphone, Globe, Video, TrendingUp } from "lucide-react";
+import { CheckCircle2, BarChart3, Users, ShoppingBag, Megaphone, Globe, Video, TrendingUp } from "lucide-react";
 
 // Survey insights data
 const surveyInsights = [
@@ -125,7 +124,7 @@ export default function TestimonialsSection() {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Based on our survey of small business owners and artisans across India, 
-            we've identified key challenges that Kiva is designed to solve.
+            we have identified key challenges that Kiva is designed to solve.
           </p>
         </motion.div>
         

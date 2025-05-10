@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ShoppingBag, Shield, CreditCard, Truck, Users, HelpCircle } from "lucide-react";
+import { ChevronDown, ShoppingBag, Shield, Truck, Users, HelpCircle } from "lucide-react";
 import Link from "next/link";
 
 // FAQ categories and questions
@@ -209,7 +209,7 @@ export default function FAQPage() {
               Still have questions?
             </h3>
             <p className="text-gray-700 mb-6">
-              We're here to help. Reach out to our team and we'll get back to you as soon as possible.
+              We are here to help. Reach out to our team and we will get back to you as soon as possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

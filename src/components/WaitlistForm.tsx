@@ -163,7 +163,7 @@ export default function WaitlistForm() {
                   Thank You for Joining!
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  You've been added to our waitlist. We'll notify you when Kiva is ready for you to explore.
+                  You have been added to our waitlist. We will notify you when Kiva is ready for you to explore.
                 </p>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
@@ -225,7 +225,7 @@ export default function WaitlistForm() {
                   
                   <motion.div variants={itemVariants}>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      I'm interested in using Kiva as a:
+                      I am interested in using Kiva as a:
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2">
                       <motion.label 

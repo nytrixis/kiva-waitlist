@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, ChevronLeft, ShoppingBag, Package, DollarSign, TrendingUp, Users, Star, Heart, User, Bell, Calendar, MapPin } from "lucide-react";
+import { ChevronRight, ChevronLeft, ShoppingBag, Package, DollarSign, TrendingUp, Star, Heart, Bell } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// Mockup data based on different app sections
+
 const mockups = [
   {
     id: 1,

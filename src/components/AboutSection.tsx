@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, Users, ShieldCheck, Globe, BarChart3, Film } from "lucide-react";
+import { CheckCircle, Users, ShieldCheck, Globe } from "lucide-react";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -83,7 +83,7 @@ export default function AboutSection() {
             Our Mission & Vision
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            At Kiva, we're building more than just a marketplace. We're creating a community that connects artisans, sellers, and buyers in a meaningful way.
+            At Kiva, we are building more than just a marketplace. We are creating a community that connects artisans, sellers, and buyers in a meaningful way.
           </p>
         </motion.div>
         
