@@ -46,7 +46,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
   
   // Function to change language using Google Translate
   const changeLanguage = (languageCode: string) => {
@@ -65,10 +64,10 @@ export default function Navbar() {
     }
   };
 
-  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Search query:", searchQuery);
-  };
+  // const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("Search query:", searchQuery);
+  // };
   
   return (
     <header className="sticky top-0 z-50 shadow-sm">
@@ -194,7 +193,7 @@ export default function Navbar() {
           exit={{ opacity: 0, height: 0 }}
           className="md:hidden bg-white border-t"
         >
-          <div className="pt-2 pb-4">
+          {/* <div className="pt-2 pb-4">
             <form onSubmit={handleSearchSubmit} className="relative px-4">
               <div className="flex items-center bg-white/90 rounded-full border border-muted">
                 <input
@@ -214,7 +213,7 @@ export default function Navbar() {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
           <div className="container mx-auto px-4 py-4 space-y-4">
             <Link href="#features" className="block text-gray-600 hover:text-primary py-2">
               Features
