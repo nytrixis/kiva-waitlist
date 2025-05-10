@@ -142,7 +142,7 @@ export default function Navbar() {
             {/* Right section (40%) - Join Waitlist and Language */}
             <div className="w-[40%] flex items-center justify-end space-x-6">
               {/* Join Waitlist Button */}
-              <Link href="#join-waitlist">
+              <Link href="#waitlist">
                 <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-white">
                   Join Waitlist
                 </Button>
