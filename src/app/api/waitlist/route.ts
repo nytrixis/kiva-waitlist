@@ -7,7 +7,7 @@ const waitlistSchema = z.object({
   email: z.string().email(),
   name: z.string().min(2),
   feedback: z.string().optional(),
-  userType: z.enum(["buyer", "seller", "both"]),
+  userType: z.enum(["buyer", "seller", "influencer"]),
 });
 
 export async function POST(request: Request) {
