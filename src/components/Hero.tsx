@@ -7,6 +7,27 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+    
+    const listener = () => {
+      setMatches(media.matches);
+    };
+    
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [matches, query]);
+
+  return matches;
+}
+
+
 const carouselItems = [
   {
     id: 1,
@@ -27,6 +48,7 @@ const carouselItems = [
   title: "Discover Through Reels",
   description: "Watch engaging product videos and connect with influencers showcasing unique items",
   image: "/images/hero3.png",
+  mobileImage: "/images/hero3-mobile.png",
   badge: "New Feature",
 },
   {
@@ -40,6 +62,7 @@ const carouselItems = [
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
+  const isMobile = useMediaQuery("(max-width: 768px)");
   
   // Auto-advance carousel
   useEffect(() => {
@@ -206,12 +229,12 @@ export default function Hero() {
                 className="relative h-[400px] md:h-[500px] w-[95%] rounded-2xl overflow-hidden shadow-xl"
               >
                 <Image
-                  src={carouselItems[current].image}
-                  alt={carouselItems[current].title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              src={isMobile && carouselItems[current].mobileImage ? carouselItems[current].mobileImage : carouselItems[current].image}
+              alt={carouselItems[current].title}
+              fill
+              className="object-cover"
+              priority
+            />
                 
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
