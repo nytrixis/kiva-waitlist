@@ -106,7 +106,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="order-2 lg:order-1 pl-7">
+          <div className="order-2 lg:order-1 pl-4 lg:pl-7">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
@@ -218,7 +218,7 @@ export default function Hero() {
           </div>
           
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 relative pr-7">
+          <div className="order-1 lg:order-2 relative pl-4 lg:pr-7">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
