@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${inter.variable} ${poppins.variable} font-sans overflow-x-hidden`}>
         <IntroAnimation />
         {children}
         <Toaster position="top-right" />
