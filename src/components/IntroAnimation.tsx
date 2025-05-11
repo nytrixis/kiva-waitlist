@@ -80,65 +80,66 @@ useEffect(() => {
           </div>
           
           {/* Main content */}
-          <div className="relative z-10 max-w-3xl text-center px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              <h1 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6">
-                This Mother&apos;s Day, Let&apos;s Empower Our Mothers
-              </h1>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.0, duration: 0.8 }} // Increased gap between animations
-            >
-              <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Supporting women who took the initiative to build small businesses and create change in their communities.
-              </p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 3.5, duration: 0.8 }} // Increased gap between animations
-            >
-              <p className="text-md md:text-lg text-gray-600 italic">
-                We&apos;ve heard your stories, your challenges, and your dreams.
-              </p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 5.0, duration: 0.8 }} // Increased gap between animations
-            >
-              <p className="text-lg md:text-2xl font-medium text-primary mt-6">
-                Here we are with the best gift out there — a platform built for you.
-              </p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 6.5, duration: 0.8 }} // Increased gap between animations
-              className="mt-10"
-            >
-              <div className="inline-block relative">
-                <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full"></div>
-                <Button 
-                  size="lg" 
-                  className="relative bg-primary hover:bg-primary/90 text-white px-8 py-6"
-                  onClick={handleSkip}
-                >
-                  Explore Kiva
-                </Button>
-              </div>
-            </motion.div>
-          </div>
+<div className="relative z-10 max-w-3xl text-center px-6 mx-auto w-full overflow-hidden">
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.5, duration: 0.8 }}
+  >
+    <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-6 break-words">
+      This Mother&apos;s Day, Let&apos;s Empower Our Mothers
+    </h1>
+  </motion.div>
+  
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 2.0, duration: 0.8 }}
+  >
+    <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">
+      Supporting women who took the initiative to build small businesses and create change in their communities.
+    </p>
+  </motion.div>
+  
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 3.5, duration: 0.8 }}
+  >
+    <p className="text-sm sm:text-md md:text-lg text-gray-600 italic">
+      We&apos;ve heard your stories, your challenges, and your dreams.
+    </p>
+  </motion.div>
+  
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 5.0, duration: 0.8 }}
+  >
+    <p className="text-base sm:text-lg md:text-2xl font-medium text-primary mt-6">
+      Here we are with the best gift out there — a platform built for you.
+    </p>
+  </motion.div>
+  
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 6.5, duration: 0.8 }}
+    className="mt-10"
+  >
+    <div className="inline-block relative">
+      <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full"></div>
+      <Button
+        size="lg"
+        className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base"
+        onClick={handleSkip}
+      >
+        Explore Kiva
+      </Button>
+    </div>
+  </motion.div>
+</div>
+
           
           {/* Progress bar */}
           <motion.div 
